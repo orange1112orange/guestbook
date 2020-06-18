@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("massage/",include("web.urls")),
     path("", RedirectView.as_view(url="message/")),
+    path("user/", include("django.contrib.auth.urls")),
 ]
